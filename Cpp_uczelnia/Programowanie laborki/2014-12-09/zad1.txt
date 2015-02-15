@@ -1,0 +1,53 @@
+#include <iostream>
+using namespace std;
+#include <string>
+#include <time.h>
+
+struct osoba{
+	string imie;
+	string nazwisko;
+	int wiek;
+	int pesel[11];
+
+};
+
+int main(){
+	srand(time(NULL));
+	int liczba;
+	// Stworzenie tablicy osob ktorych imie itp poznamy
+//	cout << "Ile osob wiek chcesz poznac po peselu?" << endl;
+//	cin >> liczba;
+	osoba w[5];
+	// Robimy petle ktora wypelni nam cala tablice wartosciami podanymi
+	for (int i = 0; i < 5; i++){
+		cout << "\nWpisz imie danej osoby: \n";
+		cin >> w[i].imie;
+		cout << "Wpisz naziwsko danej osoby: \n";
+		cin >> w[i].nazwisko;
+		cout << "Jako, ze kobiet sie nie pyta o wiek wylosujemy ci go";
+		// Losowanie srandem peselu
+		for (int j = 0; j < 11; j++){
+			w[i].pesel[j] = rand() % (10- 1) + 1;
+		}
+		cout << "Dzieki, twoje dane to: \n";
+		cout << "Pesel: ";
+		// Drukowanie peselu
+		for (int j = 0; j < 11; j++){
+			cout << w[i].pesel[j];
+		}
+		cout << endl;
+		cout << "\nImie: " << w[i].imie;
+		cout << "\nNazwisko: " << w[i].nazwisko;
+		cout << "\nRok urodzenia: ";
+		// Wybieramy milennium
+		if (w[i].pesel[0] == 0){
+			cout << "20";
+		}
+		else{
+			cout << "19";
+		}
+		cout << w[i].pesel[0] << w[i].pesel[1];
+	}
+
+	return 0;
+}

@@ -1,0 +1,99 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	/*
+	// 100 kolejnych liczb parzystych
+	int a;
+	cout << "Podaj swoja liczbe" << endl;
+	cin >> a ;
+	cout << a << endl;
+	int count = 0;
+	if (a % 2 == 0)
+	{
+		while (count < 100)
+		{
+			cout << a << endl;
+			a = a + 2;
+			count += 1;
+		}
+	}
+	else if (a % 2 == 1)
+	{
+		a = a + 1;
+		while (count < 100)
+		{
+			cout << a << endl;
+			a = a + 2;
+			count += 1;
+		}
+	}
+	cin >> a;
+	*/
+	/*
+	// Prosty kalkulator logiczny ze switchem
+	int liczba1 = 0, liczba2 = 0, wynik;
+	char znak;
+
+	cout << "Bedziesz podawal pierwsza liczbe, potem znak miedzy nimi," << endl;
+	cout << " a na koniec druga liczbe" << endl;
+	cout << "Podaj swoja pierwsza liczbe" << endl;
+	cin >> liczba1;
+	cout << "Podaj znak miedzy nimi" << endl;
+	cin >> znak;
+	cout << "Podaj druga liczbe" << endl;
+	cin >> liczba2;
+
+	cout << liczba1 << endl;
+	cout << znak << endl;
+	cout << liczba2 << endl;
+
+	switch ( znak )
+	{
+		case '+': 
+			wynik = liczba1 + liczba2;
+			break;
+		case '-': 
+			wynik = liczba1 - liczba2;
+			break;
+		case '*': 
+			wynik = liczba1 * liczba2;
+			break;
+		case '/': 
+			wynik = liczba1 / liczba2;
+			break;
+	}
+	cout << "Wysz³o: " << endl;
+	cout << wynik << endl;
+
+	cin >> wynik;
+	
+	*/
+	// silnia danej liczby
+	int liczba = 0, liczba1, silnia = 1, a = 1;
+	while (a = 1)
+	{
+		cout << "Podaj liczbe ktorej silnie chcesz obliczyc" << endl;
+		cin >> liczba;
+		liczba1 = liczba;
+		if (liczba == 0 || liczba == 1)
+		{
+			silnia = 1;
+		}
+		else
+		{
+			while (liczba > 0)
+			{
+				silnia = liczba * silnia;
+				liczba--;
+				// jakis blad?
+			}
+		}
+		cout << "Silnia " << liczba1 << " jest to" << endl;
+		cout << silnia << endl;
+		silnia = 1;
+	}
+	cin >> liczba;
+	return 0;
+}

@@ -1,0 +1,35 @@
+#include <iostream>
+#include <time.h>
+using namespace std;
+
+
+void wypisz(int tablica[], int rozmiar){
+	for (int i = 0; i < rozmiar; i++){
+		cout << tablica[i] << "\n ";
+	}
+}
+
+int main(){
+	srand ( time(NULL));
+	int t[100];
+	int cmp[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+	int wyst[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+	
+	/*********************************************************/
+
+	for (int i = 0; i < 100; i++){
+		t[i] = rand() % 9;
+		for (int j = 0; j < 10; j++){
+			if (cmp[j] == t[i]){
+				wyst[j]++;
+			}
+		}
+	}
+	
+	
+	cout << "Powstala tablica to: \n";
+	wypisz(t, 100);
+	cout << "Wystapienie danych liczb w tej tablicy to kolejno od 0 - 9 " << endl;
+	wypisz(wyst, 10);
+	
+}

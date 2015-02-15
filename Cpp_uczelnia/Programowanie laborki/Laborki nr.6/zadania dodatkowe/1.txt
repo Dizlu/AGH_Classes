@@ -1,0 +1,67 @@
+#include <iostream>
+using namespace std;
+#include <time.h>
+
+
+int main(){
+	srand(time(NULL));
+	int t[3][3] = { 0 }, t1[3] = { 0 }, w[3];
+	// Sprawdzenie czy da sie pomnozyc je przez siebie	 DOPRACOCWAC!
+	int count1 = 0, count2 = 0, a = 0, b = 0;
+	while (!t[1][a]){
+		count1++;
+		a++;
+	}
+	cout << "tyle jest a : " << a << endl;
+	while (!t1[b]){
+		count2++;
+		b++;
+	}
+	cout << "tyle jest b :" << b << endl;
+	if (count1 != count2){
+		cout << "Macierzy nie da siê pomno¿yæ" << endl;
+		cin >> a;
+		return 0;
+	}
+
+	// Uzupelniamy obie macierze randomami
+	for (int i = 0; i < 3; i++){
+		for (int j = 0; j < 3; j++){
+			t[i][j] = rand() % (10 - 1) + 1;
+		}
+	}
+	// Drukuje du¿a macierz
+	cout << "Drukujemy duza macierz" << endl;
+	for (int i = 0; i < 3; i++){
+		for (int j = 0; j < 3; j++){
+			cout <<  t[i][j] << " ";
+		}
+		cout << "\n";
+	}
+	// Uzupelniamy mala macierz
+	for (int i = 0; i < 3; i++){
+		t1[i] = rand() % (10 - 1) + 1;
+	}
+	// Drukuejym mala macierz
+	cout << "Drukujemy mala macierz" << endl;
+	for (int i = 0; i < 3; i++){
+		cout << t1[i] << " ";
+	}
+	cout << "\n";
+
+	// Mnozymy obie macierze przez siebie i zapisujemy w nowej macierzy (3x3 * 1x3 = 1x3)
+	for (int i = 0; i < 3; i++){
+		int suma = 0;
+		for (int j = 0; j < 3; j++){
+			suma += t[i][j] * t1[j];
+		}
+		w[i] = suma;
+	}
+	// Drukowanie nowej wymnozonej macierzy
+	cout << "Nowa macierz po wymnozeniu wyglada tak: " << endl;
+	for (int i = 0; i < 3; i++){
+		cout << w[i] << " ";
+	}
+	cout << "\n";
+	cin >> a;
+}

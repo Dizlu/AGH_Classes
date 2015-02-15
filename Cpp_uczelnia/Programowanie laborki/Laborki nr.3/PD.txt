@@ -1,0 +1,341 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	/*
+	// 100 kolejnych liczb parzystych
+	int a;
+	cout << "Podaj swoja liczbe" << endl;
+	cin >> a ;
+	cout << a << endl;
+	int count = 0;
+	if (a % 2 == 0)
+	{
+	while (count < 100)
+	{
+	cout << a << endl;
+	a = a + 2;
+	count += 1;
+	}
+	}
+	else if (a % 2 == 1)
+	{
+	a = a + 1;
+	while (count < 100)
+	{
+	cout << a << endl;
+	a = a + 2;
+	count += 1;
+	}
+	}
+	cin >> a;
+	*/
+	/*
+	// Prosty kalkulator logiczny ze switchem
+	int liczba1 = 0, liczba2 = 0, wynik;
+	char znak;
+
+	cout << "Bedziesz podawal pierwsza liczbe, potem znak miedzy nimi," << endl;
+	cout << " a na koniec druga liczbe" << endl;
+	cout << "Podaj swoja pierwsza liczbe" << endl;
+	cin >> liczba1;
+	cout << "Podaj znak miedzy nimi" << endl;
+	cin >> znak;
+	cout << "Podaj druga liczbe" << endl;
+	cin >> liczba2;
+
+	cout << liczba1 << endl;
+	cout << znak << endl;
+	cout << liczba2 << endl;
+
+	switch ( znak )
+	{
+	case '+':
+	wynik = liczba1 + liczba2;
+	break;
+	case '-':
+	wynik = liczba1 - liczba2;
+	break;
+	case '*':
+	wynik = liczba1 * liczba2;
+	break;
+	case '/':
+	wynik = liczba1 / liczba2;
+	break;
+	}
+	cout << "Wysz³o: " << endl;
+	cout << wynik << endl;
+
+	cin >> wynik;
+
+	*/
+	/*
+	// silnia danej liczby
+	int liczba = 0, liczba1, silnia = 1, a = 1;
+	while (a = 1)
+	{
+	cout << "Podaj liczbe ktorej silnie chcesz obliczyc" << endl;
+	cin >> liczba;
+	liczba1 = liczba;
+	if (liczba == 0 || liczba == 1)
+	{
+	silnia = 1;
+	}
+	else
+	{
+	while (liczba > 0)
+	{
+	silnia = liczba * silnia;
+	liczba--;
+	// jakis blad?
+	}
+	}
+	cout << "Silnia " << liczba1 << " jest to" << endl;
+	cout << silnia << endl;
+	silnia = 1;
+	}
+	cin >> liczba;
+
+	*/
+	/*
+	// Zlota spirala
+
+	double a = 0, b = 1, c = 0, count = 0;
+
+	cout << "Wpisz zakres dla którego wygeneruje ciag Fibonacciego" << endl;
+	cin >> count;
+	cout << a << endl;
+	cout << b << endl;
+
+	while (count > 0)
+	{
+	// Zmiana wartosci 3 zmiennej i jej wydrukowanie
+	c = a + b;
+	cout << c << endl;
+
+	// Zmiana wartosci pozostalych zmiennych do kolejnej petli
+	a = b;
+	b = c;
+
+	count--;
+	}
+
+	cin >> count;
+
+	*/
+
+	// Rysujemy!
+	int wariant = 0, count = 0, dl = 0, zmienna = 0;
+
+	cout << "Co chcesz rysowac?" << endl;
+	cout << "(1) Kwadrat" << endl;
+	cout << "(2) Trojkat" << endl;
+	cout << "(3) Choinke" << endl;
+	cout << "(4) Szesciokat" << endl;
+	cout << "(5) Osmiokat" << endl;
+	cin >> wariant;
+
+	switch (wariant)
+	{
+	case 1:
+		cout << "Jakiego boku ma byc kwadrat?" << endl;
+		cin >> dl;
+		for (int count = dl; count > 0; count--)
+		{
+			if (count == 1 || count == dl)
+			{
+				for (int count = dl; count > 0; count--)
+				{
+					cout << "*";
+				}
+				cout << " " << endl;
+			}
+			else
+			{
+				cout << "*";
+				for (int count = (dl - 2); count > 0; count--)
+				{
+					cout << " ";
+				}
+				cout << "*";
+				cout << " " << endl;
+			}
+
+
+		}
+		cin >> wariant;
+
+	case 2:
+		cout << "Jaka podstawe ma miec trójkat?" << endl;
+		cin >> dl;
+
+		cout << "*" << endl;
+		for (int count = dl; count > 0; count--)
+		{
+			cout << "*";
+			for (int count = 0; count < zmienna; count++)
+			{
+				cout << " ";
+			}
+			cout << "*" << endl;
+			zmienna++;
+
+		}
+		cout << "**";  // Char doesnt cooperate well in both dimensions so adding ** fixes that.
+		for (int count = dl; count > 0; count--)
+		{
+			cout << "*";
+		}
+		cin >> wariant;
+
+	case 3:
+	{
+			  cout << "Jak wysoka ma byc choinka ?" << endl;
+			  cin >> dl;
+			  int count_kropki = 1, count_krop = 0;
+			  int count_space = dl - 1, count_spac = 0;
+			  for (int count = dl; count > 0; count--)
+			  {
+				  for (count_spac = count_space; count_spac > 0; count_spac--)
+				  {
+					  cout << " ";
+				  }
+				  count_space--;
+				  for (count_krop = count_kropki; count_krop > 0; count_krop--)
+				  {
+					  cout << "*";
+				  }
+				  count_kropki = count_kropki + 2;
+				  cout << " " << endl;
+			  }
+			  int count = (2 * dl - 1) / 2;
+			  for (; count > 0; count--)
+			  {
+				  cout << " ";
+			  }
+			  cout << "U";
+			  cin >> wariant;
+			  break;
+	}
+	case 4:
+	{
+			  cout << "Rysujemy szesciokat o boku 3" << endl;
+			  dl = 3;
+			  int il_znakow = dl + 1, linijka = 1;
+
+			  for (int il_znakow = dl; il_znakow > 0; il_znakow--)
+			  {
+				  cout << " ";
+			  }
+			  cout << "*";
+
+			  cout << " " << endl;
+			  cout << " " << "*";
+			  for (int b = 3; b > 0; b--)
+			  {
+				  cout << " ";
+			  }
+			  cout << "*" << endl;
+			  for (int b = 3; b > 0; b--)
+			  {
+				  for (int count = 2 * dl + 1; count > 0; count--)
+				  {
+					  if (count == 7 || count == 1)
+					  {
+						  cout << "*";
+					  }
+					  else
+					  {
+						  cout << " ";
+					  }
+				  }
+				  cout << " " << endl;
+			  }
+			  // wklejone
+
+			  cout << " " << "*";
+			  for (int b = 3; b > 0; b--)
+			  {
+				  cout << " ";
+			  }
+			  cout << "*" << endl;
+
+
+			  for (int il_znakow = dl; il_znakow > 0; il_znakow--)
+			  {
+				  cout << " ";
+			  }
+			  cout << "*" << endl;
+
+
+
+			  cin >> wariant;
+	}
+
+	case 5:
+	{
+			  cout << "Rysujemy osmiokat o boku 3" << endl;
+			  dl = 3;
+			  int il_znakow = 2 * dl - 1, linijka = 1;
+
+			  for (int il_znakow = 2 * dl - 1; il_znakow > 0; il_znakow--)
+			  {
+				  if (il_znakow > dl)
+				  {
+					  cout << " ";
+				  }
+				  else if (il_znakow <= dl)
+				  {
+					  cout << "*";
+				  }
+			  }
+			  cout << " " << endl;
+			  cout << " " << "*";
+			  for (int b = 3; b > 0; b--)
+			  {
+				  cout << " ";
+			  }
+			  cout << "*" << endl;
+			  for (int b = 3; b > 0; b--)
+			  {
+				  for (int count = 2 * dl + 1; count > 0; count--)
+				  {
+					  if (count == 7 || count == 1)
+					  {
+						  cout << "*";
+					  }
+					  else
+					  {
+						  cout << " ";
+					  }
+				  }
+				  cout << " " << endl;
+			  }
+			  // wklejone
+
+			  cout << " " << "*";
+			  for (int b = 3; b > 0; b--)
+			  {
+				  cout << " ";
+			  }
+			  cout << "*" << endl;
+
+
+			  for (int il_znakow = 2 * dl - 1; il_znakow > 0; il_znakow--)
+			  {
+				  if (il_znakow > dl)
+				  {
+					  cout << " ";
+				  }
+				  else if (il_znakow <= dl)
+				  {
+					  cout << "*";
+				  }
+			  }
+	}
+			  cin >> wariant;
+	}
+
+	return 0;
+}

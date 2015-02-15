@@ -1,0 +1,46 @@
+#include <iostream>
+#include <time.h>
+using namespace std;
+
+
+void wypisz(char tablica[], int rozmiar){
+	for (int i = 0; i < rozmiar; i++){
+		cout << tablica[i];
+	}
+}
+void sklej(char tab1[], char tab2[], char tab3[]){
+	int i = 0, j = 0;
+	while (tab1[i]){
+		tab3[i] = tab1[i];
+		i++;
+	}
+
+	tab3[i] = ' ';
+	i++;
+	while (tab2[j]){
+		tab3[i] = tab2[j];
+		i++;
+		j++;
+	}
+}
+
+int main(){
+	char t[10] = { 178, 32, 178, 32, 178, 32, 178, 32, 178, 32 };
+	char t1[10] = { 32, 178, 32, 178, 32, 178, 32, 178, 32, 178 };
+
+	for (int i = 0; i < 10; i++){
+		if (i % 2 == 0){
+			for (int j = 0; j < 10; j++){
+				cout << t[j];
+			}
+		}
+		if (i % 2 == 1){
+			for (int j = 0; j < 10; j++){
+				cout << t1[j];
+			}
+		}
+		cout << endl;
+	}
+	int z = 0;
+	cin >> z;
+}

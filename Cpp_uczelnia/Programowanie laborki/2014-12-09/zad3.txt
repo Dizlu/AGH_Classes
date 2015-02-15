@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+#include <string>
+#include <time.h>
+#include <math.h>
+/************************************/
+struct trojkat{
+	int a, b, c;
+
+}trojkacior;
+
+/***********************************/
+int licz_obwod(trojkat troj){
+	int suma = 0;
+	suma = troj.a + troj.b + troj.c;
+	
+	return suma;
+
+}
+/**********************************/
+int licz_pole(trojkat troja){
+	int p = (troja.a + troja.b + troja.c)/ 2 ;
+	int pole = sqrt(p * (p - troja.a) * (p - troja.b) * (troja.c));
+
+	return pole;
+}
+/***********************************/
+int main(){
+	srand(time(NULL));
+	trojkacior.a = 2;
+	trojkacior.b = 3;
+	trojkacior.c = 4;
+	
+	int sumka = 
+
+}

@@ -1,0 +1,17 @@
+#include <iostream>
+#include <time.h>
+using namespace std;
+
+int main(){
+	srand (time (NULL));
+	int t[10];
+	cout << "Tablica t sklada sie z 10 losowych liczb, a sa to: \n";
+	for (int i = 0; i < 10; i++){
+		int losowa = rand() % (100 - 10) + 10;
+		t[i] = losowa;
+		cout << t[i] << endl;
+	}
+	cout << "To by³a tablica t" << endl;
+	int lol;
+	cin >> lol;
+}

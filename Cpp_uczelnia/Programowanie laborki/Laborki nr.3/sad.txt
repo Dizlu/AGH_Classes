@@ -1,0 +1,169 @@
+#include <iostream>
+using namespace std;
+#define _USE_MATH_DEFINES
+#include <math.h>
+
+int main()
+{
+	/*
+	// Kalkulator dla figur
+	int wariant = 0, bok1 = 0, bok2 = 0;
+	
+	cout << "Witamy w kalkulatorze" << endl;
+	cout << "Policze za ciebie pole i obwod: " << endl;
+	cout << "(1) Prostokata" << endl;
+	cout << "(2) Okregu" << endl;
+	cout << "(3) Lub mozliwosc stworzenia trojkata" << endl;
+	cin >> wariant;
+
+	switch(wariant)
+	{
+	case 1:
+		cout << "Podaj pierwszy bok" << endl;
+		cin >> bok1;
+		cout << "Podaj drugi bok" << endl;
+		cin >> bok2;
+
+		if (bok1 == bok2)
+		{
+			cout << "Jest to kwadrat (i prostokat)" << endl;
+		}
+		else
+		{
+			cout << "Jest to prostokat" << endl;
+		}
+		
+		cout << "Pole tej figury to: " << endl;
+		cout << bok1*bok2 << endl;
+
+		cout << "Obwod tej figury to: " << endl;
+		cout << (bok1*2) + (bok2*2) << endl;
+
+		cin >> wariant;
+		break;
+
+
+	case 2:
+		{
+		// OKRAG
+
+		double r = 0, pi = 3.14;
+		cout << "Podaj promien danej figury" << endl;
+		cin >> r;
+		
+		cout << "Pole tego kola (okregu) to: ";
+		cout <<	pi*pow(r, 2);
+		// UNNECCESARY?
+		cout << " " << endl;
+
+		cout << "Obwod tego kola to: ";
+		cout << 2*pi*r;
+
+		cin >> wariant;
+		break;
+		}
+
+	case 3:
+		//Trojkat
+
+
+		double a = 0, b = 0, c = 0, p = 0;
+		bool praw = true;
+
+		cout << "Podaj trzy boki trojkata" << endl;
+		cin >> a;
+		cout << "Podaj kolejny" << endl;
+		cin >> b;
+		cout << "Podaj trzeci" << endl;
+		cin >> c;
+
+		p = (a + b + c) / 2;
+		if (a > b && a > c)
+		{
+			if (a - (b + c) < 0)
+			{
+				praw = false;
+			}
+		}
+		else if (b > a && b > c)
+		{
+			if b - (a + c) < 0)
+			{
+				praw = false;
+			}
+		}
+		else
+		{
+			if (c - (b + c) < 0)
+			{
+				praw = false;
+		}
+		while (praw = true)
+		{
+			cout << "Pole tego trojkata to: ";
+			cout << sqrt(p*(p-a)*(p-b)*(p-c)) << endl;
+
+			cin >> wariant;
+		}
+		break;
+	}
+	*/
+	/*
+	int suma = 0, L = 0;
+	cout << "Podaj liczbe" << endl;
+	cin >> L;
+
+	while(L)
+	{
+		suma += L%10;
+		L /= 10;
+	}
+
+	cout << suma << endl;
+
+	cin >> suma;
+	*/
+	
+	/*
+	// BINARNE
+
+	int L = 0;
+	cout << "Podaj liczbe" << endl;
+	cin >> L;
+
+	while(L)
+	{
+		if (L == 1)
+		{
+			cout << "1";
+			break;
+		}
+		cout << L%2;
+		L /= 2;
+	}
+
+
+	cin >> L;
+	*/
+
+	// 4
+
+	int l = 0, news = 0, licz = 0, count = 0;
+	
+	cout << "Podaj liczbe ktora mam zamienic" << endl;
+	cin >> l;
+
+	while (l)
+	{
+		l /= 10;
+		licz ++;
+	}
+	
+	for (int count = licz; count > 0; count--)
+	{
+
+	}
+
+	
+
+}

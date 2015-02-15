@@ -1,0 +1,56 @@
+#include <iostream>
+using namespace std;
+#include <time.h>
+
+
+/******************************************************/
+
+int main(){
+	srand( time(NULL));
+	// Tworzenie zmiennych do wpisania przez uzytkownika
+	int n, m;
+	cin >> n;
+	cin >> m;
+	// Utowrzenie macierzy 2D
+	int **w = new int*[n];
+	for(int i = 0; i < n; i++){
+		w[i] = new int[m];
+	}
+	// Wypelnienie macierzy randomami
+	for (int i = 0; i < n; i++){
+		for (int j = 0; j < m; j++){
+			w[i][j] = rand() % (100 - 10) + 10;
+		}
+	}
+	// Wydrukowanie pierwszej macierzy wypelnionej randomami
+	cout << " Pierwsza macierz to: " << endl;
+	for (int i = 0; i < n; i++){
+		cout << "| ";
+		for (int j = 0; j < m; j++){
+			cout << w[i][j] << " ";
+		}
+		cout << " | \n";
+	}
+	
+	// Stworzenie macierzy do transpozycji
+	int **t = new int*[m];
+	for (int i = 0; i < m; i++){
+		t[i] = new int[n];
+	}
+	// Przepisanie wartosci do drugiej macierzy
+	for (int i = 0; i < m; i++){
+		for (int j = 0; j < n; j++){
+			t[j][i] = w[i][j];
+		}
+	}
+	// Wydrukowanie przetransponowanej macierzy		
+	cout << " Przetransponowana macierz to: " << endl;
+	for (int i = 0; i < n; i++){
+		cout << "| ";
+		for (int j = 0; j < m; j++){
+			cout << t[i][j] << " ";
+		}
+		cout << " | \n";
+	}
+
+}

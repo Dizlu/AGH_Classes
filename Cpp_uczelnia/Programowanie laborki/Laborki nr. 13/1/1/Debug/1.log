@@ -1,0 +1,10 @@
+﻿Build started 2015-01-28 19:16:05.
+     1>Project "E:\Dropbox\Studia\Programowanie laborki\Laborki nr. 13\1\1\1.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         E:\Program Files\Visual Studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Dropbox\Studia\Programowanie laborki\Laborki nr. 13\1\Debug\1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Dropbox\Studia\Programowanie laborki\Laborki nr. 13\1\Debug\1.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Dropbox\Studia\Programowanie laborki\Laborki nr. 13\1\Debug\1.lib" /MACHINE:X86 Debug\main.obj
+         1.vcxproj -> E:\Dropbox\Studia\Programowanie laborki\Laborki nr. 13\1\Debug\1.exe
+     1>Done Building Project "E:\Dropbox\Studia\Programowanie laborki\Laborki nr. 13\1\1\1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.98

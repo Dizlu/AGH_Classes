@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+bool liczby_pitagorejskie(int a,int b,int c)
+{
+	if ((a*a+b*b)==c*c)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+int main()
+{	
+	int a = 0, b = 0, c = 0;
+	cout << "Podaj kolejno 3 liczby ktore maja byc pitagorejskie" << endl;
+	cin >> a;
+	cin >> b;
+	cin >> c;
+
+	if (liczby_pitagorejskie(a, b, c) == 1)
+	{
+		 cout << "Sa to liczby pitagorejskie" << endl;
+	}
+	else if(liczby_pitagorejskie(a, b, c) == 0)
+	{
+		cout << "Nie sa to liczby pitagorejskie" << endl;
+	}
+	cin >> a;
+	return 0;
+}
+

@@ -1,0 +1,27 @@
+#include <iostream>
+#include <time.h>
+using namespace std;
+
+
+void wypisz(int tablica[], int rozmiar){
+	for (int i = 0; i < rozmiar; i++){
+		cout << tablica[i] << ", ";
+	}
+}
+
+int main(){
+	srand ( time(NULL));
+	int t[10];
+	for (int i = 0; i < 10; i++){
+		t[i] = rand() % (100 - 10) + 10;
+	}
+	int t1[10];
+	for (int i = 9, j = 0; i >= 0; i--, j++){
+		t1[i] = t[j];
+	}
+
+	cout << "Pierwsza tablica to: \n";
+	wypisz(t, 10);
+	cout << "Ta sama tablica, tylko odwrócona to: \n";
+	wypisz(t1, 10);
+}

@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+#include <string>
+#include <time.h>
+/************************************/
+struct zespolone{
+	int im;
+	int re;
+
+}pierwsza, druga;
+/***********************************/
+zespolone dodaj(zespolone a, zespolone b){
+	zespolone suma;
+	int suma_x = 0, suma_y = 0;
+	suma.im = pierwsza.im + druga.im;
+	suma.re = pierwsza.re + druga.re;
+
+	return suma;
+}
+/***********************************/
+int main(){
+	srand(time(NULL));
+	pierwsza.im = 2;
+	pierwsza.re = 3;
+
+	druga.im = 5;
+	druga.re = 5;
+	
+	zespolone a = dodaj(pierwsza, druga);
+
+	cout << "Ich suma to: " << a.re << "+ " << a.im << "i" << endl;
+	
+
+	return 0;
+}

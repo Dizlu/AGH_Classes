@@ -1,0 +1,32 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+    // Wzory wyliczone dla podanych dwóch, przekszta³cone do prostszej postaci
+	float s = 0.4;
+	int V = 400;
+
+	float t = 2 * s / V;
+    float a = V / t;
+    
+    cout << "Czas wynosil: " << endl;
+    cout << t << endl;
+    cout << " " << endl;
+    cout << "Srednie opoznienie wynosilo: " << endl;
+    cout << a << endl;
+    
+    // Drugie zadanie z wykorzystaniem biblioteki math.h
+    float v = 8;
+    float g = 9.81;
+    
+    float a = 10;
+    
+    
+    d = (pow(V, 2) * sin(2a)) / g);
+    
+    cout << d << endl;
+    
+	return 0;
+}

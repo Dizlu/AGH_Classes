@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	// Increasing from 1 to 10, -1
+	int b = 1;
+	while (b <= 10)
+	{
+		cout<<b<<endl;
+		b = b + 1;
+	}
+
+	// Decreasing from 1 to 0, -0.1
+	float a = 1;
+	do
+	{
+		cout<<a<<endl;
+		a = a - 0.1;
+	}
+	while (a > 0);
+
+system("PAUSE");
+return 0;
+}

@@ -1,0 +1,34 @@
+#include <iostream>
+#include <time.h>
+using namespace std;
+
+
+void wypisz(char tablica[], int rozmiar){
+	for (int i = 0; i < rozmiar; i++){
+		cout << tablica[i];
+	}
+}
+void sklej(char tab1[],char tab2[],char tab3[]){
+	int i = 0, j = 0;
+	while (tab1[i]){
+		tab3[i] = tab1[i];
+		i++;
+	}
+
+		tab3[i] = ' ';
+		i++;
+	while (tab2[j]){
+		tab3[i] = tab2[j];
+		i++;
+		j++;
+	}
+}
+
+int main(){
+	char t1[] = "Jestem wzorowym"; // 16 znakow
+	char t2[] = "studentem AGH";	// 14 znakow
+	char t3[50];
+	sklej(t1, t2, t3);
+	wypisz(t3, 29);
+	cout << "\n";
+}

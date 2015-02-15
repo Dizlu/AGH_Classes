@@ -1,0 +1,37 @@
+#include <iostream>
+#include <time.h>
+using namespace std;
+
+
+void wypisz(int tab[], int n){
+	cout << "Podana tablica to (1D): \n";
+	for (int a = 0; a < n; a++){
+		cout << tab[a] << endl;
+	}
+}
+
+void wypisz(int tab[][3], int n, int m){
+	cout << "Podana tablica to (2D): \n";
+	for (int a = 0; a < n; a++){
+		for (int b = 0; b < m; b++){
+			cout << tab[a][b] << endl;
+		}
+	}
+}
+
+
+int main(){
+	srand ( time(NULL));
+	int t[3];		// Stworzenie pierwszej tablicy z randomami
+	for (int a = 0; a < 3; a++){
+		t[a] = rand();
+	}
+	int t1[3][3];    // Stworzenie drugiej tablicy z randomami
+	for (int a = 2; a >= 0; a--){
+		for(int b = 2; b >= 0; b--){
+			t1[a][b] = rand();
+		}
+	}
+	wypisz(t, 3);
+	wypisz(t1, 3, 3);
+}

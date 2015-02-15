@@ -1,0 +1,90 @@
+#include <iostream>
+using namespace std;
+#include <time.h>
+/***********************************/
+void array_creator(int tab[4][4]){
+	// A odpowiada za zera, b za 1
+	int a = 0;
+	for (int i = 0; i < 4; i++){
+		for (int j = 0; j < 4; j++){
+			if (j < a){
+				tab[i][j] = 1;
+			}
+			if (j >= a){
+				tab[i][j] = 0;
+			}
+		}
+		a++;
+	}
+}
+/*******************************************/
+
+void symetrical_array(int tab[4][4]){
+	for (int i = 0; i < 4; i++){
+		for (int j = 0; j < 4; j++){
+			if (i == j){
+				tab[i][j] = 1;
+				continue;
+			}
+			tab[i][j] = tab[j][i];
+		}
+	}
+
+}
+/*************************************/
+void array_value(int tab[4][4]){
+	int go = 1;
+	while (go){
+		cout << "Podaj numer wiersza, kolumny i wartosc jaka chcesz w to miejsce wstawic: " << endl;
+		int wiersz, kolumna, wartosc;
+		cin >> wiersz >> kolumna >> wartosc;
+		// Wpisujemy wartosc
+
+		tab[wiersz - 1][kolumna - 1] = wartosc;
+		// Niechlujne wybieranie powtorki - ale dziala ;_;
+		char wybor = 'a';
+		while (wybor != 'n' || wybor != 'y'){
+			cout << "Chcesz powtorzyc? y/n" << endl;
+			cin >> wybor;
+			if (wybor == 'n'){
+				go = 0;
+				break;
+			}
+			if (wybor == 'y'){
+				break;
+			}
+		}
+	}
+}
+int main(){
+	srand(time(NULL));
+	int t[4][4] = { 0 };
+
+	// Uzupelniamy obie macierze randomami
+	for (int i = 0; i < 4; i++){
+		for (int j = 0; j < 4; j++){
+			t[i][j] = rand() % (10 - 1) + 1;
+		}
+	}
+	// Drukuje du¿a macierz
+	cout << "Drukujemy duza macierz" << endl;
+	for (int i = 0; i < 4; i++){
+		for (int j = 0; j < 4; j++){
+			cout << t[i][j] << " ";
+		}
+		cout << "\n";
+	}
+	// Funkcja 
+	array_creator(t);
+	symetrical_array(t);
+	array_value(t);
+	// Znowu drukowanie
+	cout << "Drukujemy duza macierz" << endl;
+	for (int i = 0; i < 4; i++){
+		for (int j = 0; j < 4; j++){
+			cout << t[i][j] << " ";
+		}
+		cout << "\n";
+	}
+	system("pause");
+}

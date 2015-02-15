@@ -1,0 +1,38 @@
+﻿Build started 2014-10-29 11:29:02.
+     1>Project "D:\Programing\Visual projekty\labki28_10\labki28_10\labki28_10.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Hearthstone\Programy\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main1.cpp
+         main1.cpp
+     1>d:\programing\visual projekty\labki28_10\labki28_10\main1.cpp(29): error C2679: binary '<<' : no operator found which takes a right-hand operand of type 'void' (or there is no acceptable conversion)
+                 d:\hearthstone\programy\vc\include\ostream(498): could be 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)'
+                 d:\hearthstone\programy\vc\include\ostream(478): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)'
+                 d:\hearthstone\programy\vc\include\ostream(458): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)'
+                 d:\hearthstone\programy\vc\include\ostream(438): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)'
+                 d:\hearthstone\programy\vc\include\ostream(418): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)'
+                 d:\hearthstone\programy\vc\include\ostream(397): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)'
+                 d:\hearthstone\programy\vc\include\ostream(377): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)'
+                 d:\hearthstone\programy\vc\include\ostream(356): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)'
+                 d:\hearthstone\programy\vc\include\ostream(336): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)'
+                 d:\hearthstone\programy\vc\include\ostream(316): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)'
+                 d:\hearthstone\programy\vc\include\ostream(291): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)'
+                 d:\hearthstone\programy\vc\include\ostream(271): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)'
+                 d:\hearthstone\programy\vc\include\ostream(237): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)'
+                 d:\hearthstone\programy\vc\include\ostream(217): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::_Bool)'
+                 d:\hearthstone\programy\vc\include\ostream(210): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))'
+                 d:\hearthstone\programy\vc\include\ostream(203): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))'
+                 d:\hearthstone\programy\vc\include\ostream(197): or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))'
+                 d:\hearthstone\programy\vc\include\ostream(1026): or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const std::error_code &)'
+                 d:\hearthstone\programy\vc\include\ostream(978): or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,unsigned char)'
+                 d:\hearthstone\programy\vc\include\ostream(971): or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const unsigned char *)'
+                 d:\hearthstone\programy\vc\include\ostream(964): or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,signed char)'
+                 d:\hearthstone\programy\vc\include\ostream(957): or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const signed char *)'
+                 d:\hearthstone\programy\vc\include\ostream(831): or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)'
+                 d:\hearthstone\programy\vc\include\ostream(784): or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)'
+                 d:\hearthstone\programy\vc\include\ostream(746): or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)'
+                 d:\hearthstone\programy\vc\include\ostream(699): or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)'
+                 while trying to match the argument list '(std::ostream, void)'
+     1>Done Building Project "D:\Programing\Visual projekty\labki28_10\labki28_10\labki28_10.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.25

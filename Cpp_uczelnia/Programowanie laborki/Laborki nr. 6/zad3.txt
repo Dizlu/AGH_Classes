@@ -1,0 +1,47 @@
+#include <iostream>
+#include <time.h>
+using namespace std;
+
+
+void wypisz(int *tab, int n){
+	cout << "Podana tablica to (1D): \n";
+	for (int a = 0; a < n; a++){
+		cout << tab[a] << endl;
+	}
+}
+
+float t[3], t1[4] = {0};		// Stworzenie pierwszej i druigej tablicy
+
+float dodanie(float *tab, int roz, int poz, float val){
+	//		Wskaznik do tab, rozmiar, pozycja, wartosc
+	for (int a = 0; a < poz; a++){
+		t1[a] = tab[a];
+	}
+	// Uzupelnienie od konca do nowej wartosci
+	for (int i = poz - 1; i < roz; i++){
+		t1[i + 1] = tab[i];
+	}
+
+	// Nowa wartoœæ
+	t1[poz - 1] = val;
+	
+	return *t1;
+} 
+int main(){
+	srand ( time(NULL));
+
+	for (int a = 0; a < 3; a++){
+		t[a] = rand();
+	}
+	cout << "Drukujemy przed: ";
+	for (int i = 0; i < 3; i++){
+		cout << t[i] << "\t";
+	}
+	cout << "\nDrukujemy po: ";
+	dodanie(t, 3, 2, 1);
+	for (int i = 0; i < 4; i++){
+		cout << t1[i] << "\t";
+	}
+	int a;
+	cin >> a;
+}
