@@ -1,0 +1,44 @@
+section .text
+global _start
+
+_start:
+;       TUTAJ BUDUJEMY CHOINKE!
+        xor edi, edi
+        xor esi, esi
+petla:
+                cmp esi, 5
+                jae koniec
+
+        cmp edi, esi
+        jae gwiazdka
+
+        mov eax, 4
+        mov ebx, 1
+        mov ecx, zm
+        mov edx, 1
+        int 80h
+
+        inc edi
+        jmp petla
+
+gwiazdka:
+        mov eax, 4
+        mov ebx, 1
+        mov ecx, tekst
+        mov edx, [tekst_dl]
+        int 80h
+
+        inc esi
+        xor edi, edi
+        jmp petla
+
+koniec:
+        mov eax, 1
+        int 80h
+
+section .data
+        tekst db "*",0ah
+        tekst_dl dd $ - tekst
+
+        zm db "X"
+

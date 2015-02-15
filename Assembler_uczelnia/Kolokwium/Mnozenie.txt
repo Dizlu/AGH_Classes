@@ -1,0 +1,60 @@
+global _start
+section .text
+
+_start:
+; WPROWADZAMY DWIE LICZBY, MNOZYMY JE I DRUKUJEMY WYNIK
+
+        mov eax, 3
+        mov ebx, 0
+        mov ecx, licz
+        mov edx, licz_dl
+        int 80h
+
+        mov eax, 3
+        mov ebx, 0
+        mov ecx, licz1
+        mov edx, licz1_dl
+        int 80h
+
+;przenosimy zmienne jako inty, mnozymy drukujemy
+        mov al, [licz]
+        mov bl, [licz1]
+        sub al, 48
+        sub bl, 48
+        mov [cyf], al
+        mov [cyf1], bl
+
+;mnozenie
+        xor ecx, ecx
+        mov eax, [cyf]
+        mov ebx, [cyf1]
+        mul ebx
+        add eax, 48
+        mov [wynik], eax
+
+; drukujemy wynik
+        mov eax, 4
+        mov ebx, 1
+        mov ecx, wynik
+        mov edx, 2
+        int 80h
+
+
+        mov eax, 1
+        int 80h
+
+
+
+section .data
+
+        licz db 0, 0ah
+        licz_dl equ $ - licz
+
+        licz1 db 0, 0ah
+        licz1_dl equ $ - licz1
+
+        cyf dd 0
+        cyf1 dd 0
+
+  	wynik db 0, 0ah
+
