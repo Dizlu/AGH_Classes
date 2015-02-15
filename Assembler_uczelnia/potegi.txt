@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+#include <math.h>
+#define _USE_MATH_DEFINES
+
+int potegi(int n, int m = 2)
+{
+	if (n == 0 || m == 0)
+	{
+		return 0;
+	}
+	else if (n > 0 && m > 0)
+	{
+		return pow(int(n), int(m));
+		/*
+		int z = n;
+		for (; m > 1; m--)
+		{
+			n *= z;
+		}
+		return n;
+		*/
+	}
+}
+
+int main()
+{
+	int a = 0, b = 0;
+	cout << "Podaj swoje liczby" << endl;
+	cin >> a;
+	cin >> b;
+	cout << potegi(a, b) << endl;
+	cin >> a;
+	return 0;
+}
+
