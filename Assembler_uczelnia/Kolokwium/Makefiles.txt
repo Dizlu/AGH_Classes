@@ -1,0 +1,30 @@
+test: test.o
+        ld test.o -o test
+test.o: test.asm
+        nasm -f elf64 test.asm -o test.o
+
+
+
+
+
+zmiana:zmiana.o
+        ld zmiana.o -o zmiana
+zmiana.o:zmiana.asm
+        nasm -f elf64 zmiana.asm -o zmiana.o
+
+
+
+
+poprawa:poprawa.o
+        ld poprawa.o -o poprawa
+poprawa.o:poprawa.asm
+        nasm -f elf64 poprawa.asm -o poprawa
+
+
+
+
+koncowy:koncowy.o
+        ld koncowy.o -o koncowy
+koncowy.o:koncowy.asm
+        nasm -f elf64 koncowy.asm -o koncowy.o
+

@@ -1,0 +1,56 @@
+
+section .text
+global _start
+
+_start:
+;Drukujemy pytanie i wprowadzamy dana
+        mov eax, 4
+        mov ebx, 1
+        mov ecx, komunikat
+        mov edx, komunikat_dl
+        int 80h
+
+        mov eax, 3
+        mov ebx, 0
+        mov ecx, hello
+        mov edx, hello_dl
+        int 80h
+
+        mov eax, 4
+        mov ebx, 1
+        mov ecx, zm
+        mov edx, 1
+        int 80h
+;Drukujemy
+; for
+                xor esi, esi
+        petla:
+                cmp esi, 7
+                jae koniec
+   mov eax, 4
+        mov ebx, 1
+        mov ecx, hello
+        mov edx, hello_dl
+        int 80h
+
+        inc esi
+        jmp petla
+
+        koniec:
+                mov eax, 1
+                int 80h
+
+
+
+section .data
+        hello dd "                         ", 0ah
+        hello_dl equ $ - hello
+
+        komunikat dd "Co chcesz wydrukowac, nedzna istoto?", 0ah
+        komunikat_dl equ $ - komunikat
+
+        zm dd 0ah
+
+
+
+
