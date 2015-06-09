@@ -1,0 +1,39 @@
+﻿Build started 2015-05-29 13:04:45.
+     1>Project "F:\Dropbox\Algorytmy labsy\BST\BST\BST.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         F:\Visual\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp Timer.cpp
+         Timer.cpp
+     1>f:\dropbox\algorytmy labsy\bst\bst\timer.cpp(13): warning C4244: '=' : conversion from 'double' to '__int64', possible loss of data
+         main.cpp
+     1>f:\dropbox\algorytmy labsy\bst\bst\timer.cpp(13): warning C4244: '=' : conversion from 'double' to '__int64', possible loss of data
+     1>f:\dropbox\algorytmy labsy\bst\bst\main.cpp(26): warning C4003: not enough actual parameters for macro 'max'
+     1>f:\dropbox\algorytmy labsy\bst\bst\main.cpp(26): error C2059: syntax error : ')'
+     1>f:\dropbox\algorytmy labsy\bst\bst\main.cpp(26): error C2334: unexpected token(s) preceding ':'; skipping apparent function body
+     1>f:\dropbox\algorytmy labsy\bst\bst\main.cpp(27): warning C4003: not enough actual parameters for macro 'min'
+     1>f:\dropbox\algorytmy labsy\bst\bst\main.cpp(31): error C2143: syntax error : missing ')' before ';'
+     1>f:\dropbox\algorytmy labsy\bst\bst\main.cpp(31): error C2059: syntax error : ')'
+     1>f:\dropbox\algorytmy labsy\bst\bst\main.cpp(31): error C2238: unexpected token(s) preceding ';'
+     1>f:\dropbox\algorytmy labsy\bst\bst\main.cpp(33): error C2535: 'BST::BST(void)' : member function already defined or declared
+                 f:\dropbox\algorytmy labsy\bst\bst\main.cpp(16) : see declaration of 'BST::BST'
+     1>f:\dropbox\algorytmy labsy\bst\bst\main.cpp(63): error C2535: 'BSTNode *BST::nextBST(BSTNode *)' : member function already defined or declared
+                 f:\dropbox\algorytmy labsy\bst\bst\main.cpp(20) : see declaration of 'BST::nextBST'
+     1>f:\dropbox\algorytmy labsy\bst\bst\main.cpp(102): error C2535: 'void BST::del(BSTNode *)' : member function already defined or declared
+                 f:\dropbox\algorytmy labsy\bst\bst\main.cpp(25) : see declaration of 'BST::del'
+     1>f:\dropbox\algorytmy labsy\bst\bst\main.cpp(120): error C2535: 'BSTNode *BST::frson(BSTNode *)' : member function already defined or declared
+                 f:\dropbox\algorytmy labsy\bst\bst\main.cpp(18) : see declaration of 'BST::frson'
+     1>f:\dropbox\algorytmy labsy\bst\bst\main.cpp(128): error C2535: 'BSTNode *BST::flson(BSTNode *)' : member function already defined or declared
+                 f:\dropbox\algorytmy labsy\bst\bst\main.cpp(19) : see declaration of 'BST::flson'
+     1>f:\dropbox\algorytmy labsy\bst\bst\main.cpp(137): warning C4003: not enough actual parameters for macro 'max'
+     1>f:\dropbox\algorytmy labsy\bst\bst\main.cpp(137): error C2589: '(' : illegal token on right side of '::'
+     1>f:\dropbox\algorytmy labsy\bst\bst\main.cpp(137): error C2059: syntax error : '::'
+     1>f:\dropbox\algorytmy labsy\bst\bst\main.cpp(137): error C2334: unexpected token(s) preceding ':'; skipping apparent function body
+     1>f:\dropbox\algorytmy labsy\bst\bst\main.cpp(142): warning C4003: not enough actual parameters for macro 'min'
+     1>f:\dropbox\algorytmy labsy\bst\bst\main.cpp(239): warning C4003: not enough actual parameters for macro 'max'
+     1>f:\dropbox\algorytmy labsy\bst\bst\main.cpp(240): warning C4003: not enough actual parameters for macro 'min'
+     1>f:\dropbox\algorytmy labsy\bst\bst\main.cpp(263): fatal error C1004: unexpected end-of-file found
+         Generating Code...
+     1>Done Building Project "F:\Dropbox\Algorytmy labsy\BST\BST\BST.vcxproj" (Rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:04.44

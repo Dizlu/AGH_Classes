@@ -1,0 +1,10 @@
+﻿Build started 2015-05-14 18:49:25.
+     1>Project "F:\Dropbox\Project1\Project1\Project1.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         E:\Visual\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Dropbox\Project1\Debug\Project1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\Dropbox\Project1\Debug\Project1.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Dropbox\Project1\Debug\Project1.lib" /MACHINE:X86 Debug\main.obj
+     1>LINK : fatal error LNK1168: cannot open F:\Dropbox\Project1\Debug\Project1.exe for writing
+     1>Done Building Project "F:\Dropbox\Project1\Project1\Project1.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.46
